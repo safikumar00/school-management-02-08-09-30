@@ -69,7 +69,10 @@ export default function TabLayout() {
         const routeName = route.path.split('/').pop() || 'index';
         
         return (
-          <Tabs.Screen
+          <SafeAreaProvider>
+      <AuthProvider>
+        <RoleProvider> {/* Only if needed */}
+           <Tabs.Screen
             key={route.path}
             name={routeName}
             options={{
@@ -95,6 +98,10 @@ export default function TabLayout() {
         }}
       />
     </Tabs>
+        </RoleProvider>
+      </AuthProvider>
+    </SafeAreaProvider>
+         
   );
 }
 
