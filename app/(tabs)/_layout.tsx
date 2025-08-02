@@ -22,6 +22,8 @@ import { useRole } from '../../src/hooks/useRole';
 import { getTabRoutesForRole } from '../../src/navigation/routeConfig';
 import { COLORS, TAB_BAR_HEIGHT } from '../../src/utils/constants';
 import { ROLES } from '../../src/config/appConfig';
+import { AuthProvider } from '../src/contexts/AuthContext';
+import { RoleProvider } from '../src/contexts/RoleContext'; 
 
 const iconMap = {
   home: Home,
