@@ -22,8 +22,6 @@ import { useRole } from '../../src/hooks/useRole';
 import { getTabRoutesForRole } from '../../src/navigation/routeConfig';
 import { COLORS, TAB_BAR_HEIGHT } from '../../src/utils/constants';
 import { ROLES } from '../../src/config/appConfig';
-import { AuthProvider } from '../src/contexts/AuthContext';
-import { RoleProvider } from '../src/contexts/RoleContext'; 
 
 const iconMap = {
   home: Home,
@@ -67,12 +65,9 @@ export default function TabLayout() {
       {tabRoutes.map((route) => {
         const IconComponent = iconMap[route.icon as keyof typeof iconMap];
         const routeName = route.path.split('/').pop() || 'index';
-        
+         
         return (
-          <SafeAreaProvider>
-      <AuthProvider>
-        <RoleProvider> {/* Only if needed */}
-           <Tabs.Screen
+          <Tabs.Screen
             key={route.path}
             name={routeName}
             options={{
@@ -98,10 +93,6 @@ export default function TabLayout() {
         }}
       />
     </Tabs>
-        </RoleProvider>
-      </AuthProvider>
-    </SafeAreaProvider>
-         
   );
 }
 
