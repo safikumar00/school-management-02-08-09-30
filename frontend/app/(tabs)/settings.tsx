@@ -15,7 +15,7 @@ export default function SettingsScreen() {
 
   const handleLogout = async () => {
     await logout();
-    router.replace('/login');
+    // TabLayout's <Redirect href="/login" /> handles navigation once auth state updates
   };
 
   const settingSections = [

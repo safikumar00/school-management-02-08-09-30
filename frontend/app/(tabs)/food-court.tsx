@@ -246,7 +246,7 @@ const styles = StyleSheet.create({
   qty: { fontSize: TYPOGRAPHY.fontSize.base, fontWeight: '700', color: COLORS.gray[900], minWidth: 22, textAlign: 'center' },
   cartBar: {
     position: 'absolute',
-    bottom: SPACING.md,
+    bottom: 96,
     left: SPACING.md,
     right: SPACING.md,
     flexDirection: 'row',

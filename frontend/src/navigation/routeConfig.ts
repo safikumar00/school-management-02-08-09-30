@@ -18,28 +18,7 @@ export const routes: RouteConfig[] = [
     icon: 'home',
     showInTabs: true,
   },
-  {
-    name: 'Profile',
-    path: '/(tabs)/profile',
-    allowedRoles: [ROLES.ORG_ADMIN, ROLES.HOD, ROLES.STUDENT],
-    icon: 'user',
-    showInTabs: true,
-  },
-  {
-    name: 'Notifications',
-    path: '/(tabs)/notifications',
-    allowedRoles: [ROLES.ORG_ADMIN, ROLES.HOD, ROLES.STUDENT],
-    icon: 'bell',
-    showInTabs: true,
-  },
-  {
-    name: 'Settings',
-    path: '/(tabs)/settings',
-    allowedRoles: [ROLES.ORG_ADMIN, ROLES.HOD, ROLES.STUDENT],
-    icon: 'settings',
-    showInTabs: true,
-  },
-  // Org Admin specific
+  // Admin-only
   {
     name: 'Users',
     path: '/(tabs)/users',
@@ -47,42 +26,7 @@ export const routes: RouteConfig[] = [
     icon: 'users',
     showInTabs: true,
   },
-  {
-    name: 'Departments',
-    path: '/(tabs)/departments',
-    allowedRoles: [ROLES.ORG_ADMIN],
-    icon: 'building',
-    showInTabs: true,
-  },
-  {
-    name: 'Finance',
-    path: '/(tabs)/finance',
-    allowedRoles: [ROLES.ORG_ADMIN],
-    icon: 'dollar-sign',
-    showInTabs: true,
-  },
-  {
-    name: 'Analytics',
-    path: '/(tabs)/analytics',
-    allowedRoles: [ROLES.ORG_ADMIN],
-    icon: 'bar-chart',
-    showInTabs: true,
-  },
-  // HOD specific
-  {
-    name: 'Department',
-    path: '/(tabs)/department',
-    allowedRoles: [ROLES.HOD],
-    icon: 'building',
-    showInTabs: true,
-  },
-  {
-    name: 'Exams',
-    path: '/(tabs)/exams',
-    allowedRoles: [ROLES.HOD],
-    icon: 'clipboard-list',
-    showInTabs: true,
-  },
+  // Student + HOD
   {
     name: 'Attendance',
     path: '/(tabs)/attendance',
@@ -90,14 +34,7 @@ export const routes: RouteConfig[] = [
     icon: 'calendar-check',
     showInTabs: true,
   },
-  {
-    name: 'Performance',
-    path: '/(tabs)/performance',
-    allowedRoles: [ROLES.HOD],
-    icon: 'trending-up',
-    showInTabs: true,
-  },
-  // Student specific
+  // Student-only
   {
     name: 'Marks',
     path: '/(tabs)/marks',
@@ -106,7 +43,7 @@ export const routes: RouteConfig[] = [
     showInTabs: true,
   },
   {
-    name: 'Food Court',
+    name: 'Food',
     path: '/(tabs)/food-court',
     allowedRoles: [ROLES.STUDENT],
     icon: 'utensils',
@@ -119,12 +56,34 @@ export const routes: RouteConfig[] = [
     icon: 'wallet',
     showInTabs: true,
   },
+  // All roles
+  {
+    name: 'Alerts',
+    path: '/(tabs)/notifications',
+    allowedRoles: [ROLES.ORG_ADMIN, ROLES.HOD, ROLES.STUDENT],
+    icon: 'bell',
+    showInTabs: true,
+  },
+  {
+    name: 'Profile',
+    path: '/(tabs)/profile',
+    allowedRoles: [ROLES.ORG_ADMIN, ROLES.HOD, ROLES.STUDENT],
+    icon: 'user',
+    showInTabs: true,
+  },
+  {
+    name: 'Settings',
+    path: '/(tabs)/settings',
+    allowedRoles: [ROLES.ORG_ADMIN, ROLES.HOD, ROLES.STUDENT],
+    icon: 'settings',
+    showInTabs: true,
+  },
 ];
 
 export function getRoutesForRole(role: UserRole): RouteConfig[] {
-  return routes.filter(route => route.allowedRoles.includes(role));
+  return routes.filter((route) => route.allowedRoles.includes(role));
 }
 
 export function getTabRoutesForRole(role: UserRole): RouteConfig[] {
-  return getRoutesForRole(role).filter(route => route.showInTabs);
+  return getRoutesForRole(role).filter((route) => route.showInTabs);
 }

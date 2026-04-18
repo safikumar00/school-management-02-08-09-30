@@ -41,10 +41,16 @@ export default function WalletScreen() {
     { cacheKey: user?.id ? `wallet-tx-${user.id}` : undefined, staleTime: 10_000, enabled: !!user?.id },
   );
 
-  const wallet = walletHook.data;
-  const transactions = txHook.data ?? [];
+  // Optimistic shadow copies so mutations (top-up) reflect instantly.
+  const [walletOverride, setWalletOverride] = React.useState<Wallet | null>(null);
+  const [txOverride, setTxOverride] = React.useState<Transaction[] | null>(null);
+
+  const wallet = walletOverride ?? walletHook.data;
+  const transactions = txOverride ?? txHook.data ?? [];
 
   const refreshAll = async () => {
+    setWalletOverride(null);
+    setTxOverride(null);
     await Promise.all([walletHook.refresh(), txHook.refresh()]);
   };
 
@@ -52,8 +58,14 @@ export default function WalletScreen() {
     if (!user?.id) return;
     try {
       setPending(true);
-      await walletApi.topup(user.id, amount, 'Quick top-up');
-      await refreshAll();
+      const { wallet: updated, transaction } = await walletApi.topup(
+        user.id,
+        amount,
+        'Quick top-up',
+      );
+      // Apply optimistic update so balance/transactions reflect immediately.
+      setWalletOverride(updated);
+      setTxOverride([transaction, ...transactions]);
       if (Platform.OS !== 'web') {
         Alert.alert('Top-up successful', `₹${amount} added to your wallet.`);
       }

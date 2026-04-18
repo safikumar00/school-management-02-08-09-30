@@ -19,7 +19,7 @@ export default function ProfileScreen() {
 
   const handleLogout = async () => {
     await logout();
-    router.replace('/login');
+    // TabLayout's <Redirect href="/login" /> auto-kicks in once isAuthenticated flips to false
   };
 
   const profileData = [
