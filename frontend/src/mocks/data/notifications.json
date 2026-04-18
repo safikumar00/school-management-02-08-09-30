@@ -1,0 +1,65 @@
+[
+  {
+    "id": "n-1",
+    "title": "Exam Schedule Updated",
+    "message": "Mid-semester exam schedule has been updated. Please check the new timings.",
+    "type": "info",
+    "isRead": false,
+    "createdAt": "2026-01-19T09:00:00Z",
+    "recipientRole": null
+  },
+  {
+    "id": "n-2",
+    "title": "Fee Payment Reminder",
+    "message": "Your semester fee payment is due in 3 days.",
+    "type": "warning",
+    "isRead": false,
+    "createdAt": "2026-01-18T14:30:00Z",
+    "recipientRole": "student"
+  },
+  {
+    "id": "n-3",
+    "title": "Library Book Due",
+    "message": "The book 'Introduction to Algorithms' is due tomorrow.",
+    "type": "info",
+    "isRead": true,
+    "createdAt": "2026-01-17T11:00:00Z",
+    "recipientRole": "student"
+  },
+  {
+    "id": "n-4",
+    "title": "New Faculty Onboarding",
+    "message": "Three new faculty members will be joining the CS department next week.",
+    "type": "success",
+    "isRead": false,
+    "createdAt": "2026-01-16T10:15:00Z",
+    "recipientRole": "hod"
+  },
+  {
+    "id": "n-5",
+    "title": "Campus Maintenance",
+    "message": "Power maintenance scheduled for Saturday 10 AM - 2 PM.",
+    "type": "warning",
+    "isRead": false,
+    "createdAt": "2026-01-15T08:45:00Z",
+    "recipientRole": null
+  },
+  {
+    "id": "n-6",
+    "title": "Monthly Budget Report",
+    "message": "The December budget utilization report is ready for review.",
+    "type": "info",
+    "isRead": false,
+    "createdAt": "2026-01-14T16:20:00Z",
+    "recipientRole": "org_admin"
+  },
+  {
+    "id": "n-7",
+    "title": "Wallet Top-up Successful",
+    "message": "₹1,000 has been added to your wallet.",
+    "type": "success",
+    "isRead": true,
+    "createdAt": "2026-01-13T09:30:00Z",
+    "recipientRole": "student"
+  }
+]

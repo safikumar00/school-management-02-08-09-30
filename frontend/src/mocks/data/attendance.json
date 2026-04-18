@@ -1,0 +1,102 @@
+[
+  {
+    "id": "att-1",
+    "studentId": "u-student-1",
+    "subject": "Data Structures",
+    "code": "CS301",
+    "totalClasses": 45,
+    "attendedClasses": 41,
+    "percentage": 91,
+    "lastUpdated": "2026-01-20T10:30:00Z"
+  },
+  {
+    "id": "att-2",
+    "studentId": "u-student-1",
+    "subject": "Operating Systems",
+    "code": "CS302",
+    "totalClasses": 40,
+    "attendedClasses": 35,
+    "percentage": 88,
+    "lastUpdated": "2026-01-20T11:30:00Z"
+  },
+  {
+    "id": "att-3",
+    "studentId": "u-student-1",
+    "subject": "Database Systems",
+    "code": "CS303",
+    "totalClasses": 42,
+    "attendedClasses": 33,
+    "percentage": 78,
+    "lastUpdated": "2026-01-19T14:15:00Z"
+  },
+  {
+    "id": "att-4",
+    "studentId": "u-student-1",
+    "subject": "Computer Networks",
+    "code": "CS304",
+    "totalClasses": 38,
+    "attendedClasses": 36,
+    "percentage": 94,
+    "lastUpdated": "2026-01-18T09:00:00Z"
+  },
+  {
+    "id": "att-5",
+    "studentId": "u-student-1",
+    "subject": "Software Engineering",
+    "code": "CS305",
+    "totalClasses": 35,
+    "attendedClasses": 24,
+    "percentage": 68,
+    "lastUpdated": "2026-01-19T16:30:00Z"
+  },
+  {
+    "id": "att-6",
+    "studentId": "u-student-2",
+    "subject": "Digital Electronics",
+    "code": "EC201",
+    "totalClasses": 44,
+    "attendedClasses": 40,
+    "percentage": 90,
+    "lastUpdated": "2026-01-20T10:00:00Z"
+  },
+  {
+    "id": "att-7",
+    "studentId": "u-student-2",
+    "subject": "Signals & Systems",
+    "code": "EC202",
+    "totalClasses": 42,
+    "attendedClasses": 36,
+    "percentage": 85,
+    "lastUpdated": "2026-01-19T11:00:00Z"
+  },
+  {
+    "id": "att-8",
+    "studentId": "u-student-3",
+    "subject": "Data Structures",
+    "code": "CS301",
+    "totalClasses": 45,
+    "attendedClasses": 38,
+    "percentage": 84,
+    "lastUpdated": "2026-01-20T10:30:00Z"
+  },
+  {
+    "id": "att-9",
+    "studentId": "u-student-3",
+    "subject": "Operating Systems",
+    "code": "CS302",
+    "totalClasses": 40,
+    "attendedClasses": 37,
+    "percentage": 92,
+    "lastUpdated": "2026-01-20T11:30:00Z"
+  },
+  {
+    "id": "att-10",
+    "studentId": "u-student-4",
+    "subject": "Thermodynamics",
+    "code": "ME301",
+    "totalClasses": 40,
+    "attendedClasses": 34,
+    "percentage": 85,
+    "lastUpdated": "2026-01-18T14:00:00Z"
+  }
+]

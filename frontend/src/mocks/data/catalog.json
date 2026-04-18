@@ -1,0 +1,61 @@
+{
+  "departments": [
+    {
+      "id": "d-1",
+      "name": "Computer Science",
+      "code": "CS",
+      "hodId": "u-hod-1",
+      "studentCount": 120,
+      "facultyCount": 15,
+      "budget": 2500000,
+      "description": "Department of Computer Science and Engineering"
+    },
+    {
+      "id": "d-2",
+      "name": "Electronics",
+      "code": "EC",
+      "hodId": "u-hod-2",
+      "studentCount": 95,
+      "facultyCount": 12,
+      "budget": 2200000,
+      "description": "Department of Electronics and Communication"
+    },
+    {
+      "id": "d-3",
+      "name": "Mechanical",
+      "code": "ME",
+      "hodId": null,
+      "studentCount": 80,
+      "facultyCount": 10,
+      "budget": 1900000,
+      "description": "Department of Mechanical Engineering"
+    }
+  ],
+  "dashboard": {
+    "org_admin": {
+      "totalStudents": 850,
+      "totalFaculty": 65,
+      "totalDepartments": 8,
+      "monthlyRevenue": 12500000,
+      "pendingFees": 2300000,
+      "activeDevices": 45,
+      "energyConsumption": 1250
+    },
+    "hod": {
+      "departmentStudents": 120,
+      "departmentFaculty": 15,
+      "avgAttendance": 87.5,
+      "upcomingExams": 3,
+      "pendingApprovals": 5,
+      "budgetUtilized": 75
+    },
+    "student": {
+      "overallAttendance": 89.2,
+      "currentGPA": 8.7,
+      "walletBalance": 2500,
+      "rewardPoints": 1250,
+      "upcomingExams": 2,
+      "unreadNotifications": 3
+    }
+  }
+}

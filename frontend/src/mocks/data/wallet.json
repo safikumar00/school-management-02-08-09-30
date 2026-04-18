@@ -1,0 +1,73 @@
+{
+  "wallets": {
+    "u-student-1": { "balance": 2500, "rewardPoints": 1250, "monthlySpent": 850 },
+    "u-student-2": { "balance": 1800, "rewardPoints": 820, "monthlySpent": 640 },
+    "u-student-3": { "balance": 3200, "rewardPoints": 2050, "monthlySpent": 1210 },
+    "u-student-4": { "balance": 950, "rewardPoints": 340, "monthlySpent": 290 }
+  },
+  "transactions": [
+    {
+      "id": "tx-1",
+      "studentId": "u-student-1",
+      "type": "debit",
+      "amount": 120,
+      "description": "Food Court · Vegetable Biryani",
+      "date": "2026-01-19T12:30:00Z",
+      "category": "food"
+    },
+    {
+      "id": "tx-2",
+      "studentId": "u-student-1",
+      "type": "credit",
+      "amount": 1000,
+      "description": "Wallet Top-up · UPI",
+      "date": "2026-01-18T09:15:00Z",
+      "category": "topup"
+    },
+    {
+      "id": "tx-3",
+      "studentId": "u-student-1",
+      "type": "debit",
+      "amount": 50,
+      "description": "Library Fine",
+      "date": "2026-01-17T16:45:00Z",
+      "category": "fees"
+    },
+    {
+      "id": "tx-4",
+      "studentId": "u-student-1",
+      "type": "debit",
+      "amount": 80,
+      "description": "Food Court · Masala Dosa",
+      "date": "2026-01-16T09:20:00Z",
+      "category": "food"
+    },
+    {
+      "id": "tx-5",
+      "studentId": "u-student-1",
+      "type": "credit",
+      "amount": 250,
+      "description": "Reward Points Redeemed",
+      "date": "2026-01-15T17:00:00Z",
+      "category": "reward"
+    },
+    {
+      "id": "tx-6",
+      "studentId": "u-student-2",
+      "type": "debit",
+      "amount": 60,
+      "description": "Food Court · Lime Soda Combo",
+      "date": "2026-01-19T13:10:00Z",
+      "category": "food"
+    },
+    {
+      "id": "tx-7",
+      "studentId": "u-student-2",
+      "type": "credit",
+      "amount": 500,
+      "description": "Wallet Top-up · Card",
+      "date": "2026-01-16T10:00:00Z",
+      "category": "topup"
+    }
+  ]
+}

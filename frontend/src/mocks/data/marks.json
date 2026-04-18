@@ -1,0 +1,101 @@
+[
+  {
+    "id": "mk-1",
+    "studentId": "u-student-1",
+    "examType": "Mid Semester",
+    "subject": "Data Structures",
+    "code": "CS301",
+    "marksObtained": 87,
+    "totalMarks": 100,
+    "grade": "A",
+    "date": "2026-01-10T00:00:00Z"
+  },
+  {
+    "id": "mk-2",
+    "studentId": "u-student-1",
+    "examType": "Mid Semester",
+    "subject": "Operating Systems",
+    "code": "CS302",
+    "marksObtained": 78,
+    "totalMarks": 100,
+    "grade": "B+",
+    "date": "2026-01-08T00:00:00Z"
+  },
+  {
+    "id": "mk-3",
+    "studentId": "u-student-1",
+    "examType": "Internal Assessment",
+    "subject": "Database Systems",
+    "code": "CS303",
+    "marksObtained": 46,
+    "totalMarks": 50,
+    "grade": "A+",
+    "date": "2026-01-14T00:00:00Z"
+  },
+  {
+    "id": "mk-4",
+    "studentId": "u-student-1",
+    "examType": "Quiz",
+    "subject": "Computer Networks",
+    "code": "CS304",
+    "marksObtained": 18,
+    "totalMarks": 20,
+    "grade": "A",
+    "date": "2026-01-16T00:00:00Z"
+  },
+  {
+    "id": "mk-5",
+    "studentId": "u-student-1",
+    "examType": "Assignment",
+    "subject": "Software Engineering",
+    "code": "CS305",
+    "marksObtained": 32,
+    "totalMarks": 50,
+    "grade": "C",
+    "date": "2026-01-12T00:00:00Z"
+  },
+  {
+    "id": "mk-6",
+    "studentId": "u-student-2",
+    "examType": "Mid Semester",
+    "subject": "Digital Electronics",
+    "code": "EC201",
+    "marksObtained": 82,
+    "totalMarks": 100,
+    "grade": "A",
+    "date": "2026-01-11T00:00:00Z"
+  },
+  {
+    "id": "mk-7",
+    "studentId": "u-student-2",
+    "examType": "Quiz",
+    "subject": "Signals & Systems",
+    "code": "EC202",
+    "marksObtained": 16,
+    "totalMarks": 20,
+    "grade": "B+",
+    "date": "2026-01-15T00:00:00Z"
+  },
+  {
+    "id": "mk-8",
+    "studentId": "u-student-3",
+    "examType": "Mid Semester",
+    "subject": "Data Structures",
+    "code": "CS301",
+    "marksObtained": 74,
+    "totalMarks": 100,
+    "grade": "B+",
+    "date": "2026-01-10T00:00:00Z"
+  },
+  {
+    "id": "mk-9",
+    "studentId": "u-student-4",
+    "examType": "Mid Semester",
+    "subject": "Thermodynamics",
+    "code": "ME301",
+    "marksObtained": 68,
+    "totalMarks": 100,
+    "grade": "B",
+    "date": "2026-01-09T00:00:00Z"
+  }
+]

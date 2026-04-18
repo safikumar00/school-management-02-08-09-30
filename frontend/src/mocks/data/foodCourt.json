@@ -1,0 +1,114 @@
+{
+  "categories": ["all", "breakfast", "lunch", "snacks", "beverages"],
+  "items": [
+    {
+      "id": "f-1",
+      "name": "Vegetable Biryani",
+      "description": "Aromatic basmati rice with mixed vegetables and spices",
+      "price": 120,
+      "image": "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "category": "lunch",
+      "rating": 4.5,
+      "isVeg": true,
+      "preparationTime": "15-20 min",
+      "available": true
+    },
+    {
+      "id": "f-2",
+      "name": "Masala Dosa",
+      "description": "Crispy dosa with potato curry and coconut chutney",
+      "price": 80,
+      "image": "https://images.pexels.com/photos/5560763/pexels-photo-5560763.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "category": "breakfast",
+      "rating": 4.3,
+      "isVeg": true,
+      "preparationTime": "10-15 min",
+      "available": true
+    },
+    {
+      "id": "f-3",
+      "name": "Fresh Lime Soda",
+      "description": "Refreshing lime soda with mint and ice",
+      "price": 30,
+      "image": "https://images.pexels.com/photos/1446302/pexels-photo-1446302.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "category": "beverages",
+      "rating": 4.0,
+      "isVeg": true,
+      "preparationTime": "2-3 min",
+      "available": true
+    },
+    {
+      "id": "f-4",
+      "name": "Paneer Tikka Wrap",
+      "description": "Grilled paneer with mint chutney in a whole-wheat wrap",
+      "price": 140,
+      "image": "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "category": "lunch",
+      "rating": 4.6,
+      "isVeg": true,
+      "preparationTime": "8-12 min",
+      "available": true
+    },
+    {
+      "id": "f-5",
+      "name": "Samosa Chaat",
+      "description": "Crispy samosa topped with yogurt, chutneys and sev",
+      "price": 60,
+      "image": "https://images.pexels.com/photos/5560771/pexels-photo-5560771.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "category": "snacks",
+      "rating": 4.4,
+      "isVeg": true,
+      "preparationTime": "5-7 min",
+      "available": true
+    },
+    {
+      "id": "f-6",
+      "name": "Cold Coffee",
+      "description": "Iced coffee blended with milk and chocolate",
+      "price": 70,
+      "image": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "category": "beverages",
+      "rating": 4.7,
+      "isVeg": true,
+      "preparationTime": "3-5 min",
+      "available": true
+    },
+    {
+      "id": "f-7",
+      "name": "Chicken Biryani",
+      "description": "Fragrant biryani with tender chicken and raita",
+      "price": 160,
+      "image": "https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "category": "lunch",
+      "rating": 4.8,
+      "isVeg": false,
+      "preparationTime": "18-22 min",
+      "available": true
+    },
+    {
+      "id": "f-8",
+      "name": "Poha",
+      "description": "Flattened rice tossed with peanuts, lime and curry leaves",
+      "price": 50,
+      "image": "https://images.pexels.com/photos/9609847/pexels-photo-9609847.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "category": "breakfast",
+      "rating": 4.2,
+      "isVeg": true,
+      "preparationTime": "6-8 min",
+      "available": true
+    },
+    {
+      "id": "f-9",
+      "name": "Veg Sandwich",
+      "description": "Grilled sandwich with cheese, tomato and cucumber",
+      "price": 55,
+      "image": "https://images.pexels.com/photos/1647163/pexels-photo-1647163.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "category": "snacks",
+      "rating": 4.1,
+      "isVeg": true,
+      "preparationTime": "5-8 min",
+      "available": true
+    }
+  ],
+  "orders": []
+}
